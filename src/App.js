@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import SimpleForm from './components/forms/SimpleForm';
+import AutoCompleteForm from './components/forms/AutoCompleteForm';
 
 class App extends Component {
   render() {
@@ -9,6 +10,7 @@ class App extends Component {
           <h2>Welcome to React</h2>
         </div>
         <SimpleForm />
+        <AutoCompleteForm />
       </div>
     );
   }
