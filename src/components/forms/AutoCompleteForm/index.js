@@ -32,6 +32,7 @@ export default class AutoCompleteForm extends React.Component {
       <div>
         <h1>AutoComplete example</h1>
         <Field
+          id='autocomplete'
           name='user'
           component={AutoCompleteField}
           dataSource={dataSource}

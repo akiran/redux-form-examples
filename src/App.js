@@ -1,16 +1,22 @@
 import React, { Component } from 'react';
-import SimpleForm from './components/forms/SimpleForm';
-import AutoCompleteForm from './components/forms/AutoCompleteForm';
+import {List, ListItem} from 'material-ui/List';
+import {Link} from 'react-router'
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <div className="App-header">
-          <h2>Welcome to React</h2>
+      <div className="container">
+        <div className='row'>
+          <div className="col-xs-3">
+            <List>
+              <Link to='/'><ListItem primaryText="Simple" /></Link>
+              <Link to='/autocomplete'><ListItem primaryText="Autocomplete" /></Link>
+            </List>
+          </div>
+          <div className='col-xs-9'>
+            {this.props.children}
+          </div>
         </div>
-        <SimpleForm />
-        <AutoCompleteForm />
       </div>
     );
   }
