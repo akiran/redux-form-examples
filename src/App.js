@@ -11,6 +11,7 @@ class App extends Component {
             <List>
               <Link to='/'><ListItem primaryText="Simple" /></Link>
               <Link to='/autocomplete'><ListItem primaryText="Autocomplete" /></Link>
+              <Link to='/initialization'><ListItem primaryText="Initialization" /></Link>
             </List>
           </div>
           <div className='col-xs-9'>
