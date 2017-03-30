@@ -1,6 +1,5 @@
 import React from 'react'
 import {reduxForm, Field} from 'redux-form'
-import {TextField} from 'redux-form-material-ui'
 import {AutoComplete} from 'material-ui'
 import {connect} from 'react-redux'
 import AutoCompleteField from './AutoCompleteField'

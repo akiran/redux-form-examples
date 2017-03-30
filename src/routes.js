@@ -11,6 +11,7 @@ import ValidationForm from './components/forms/ValidationForm'
 import AsyncValidationForm from './components/forms/AsyncValidationForm'
 import FieldArrayForm from './components/forms/FieldArrayForm'
 import Selectors from './components/forms/Selectors'
+import Actions from './components/forms/Actions'
 
 const routes = (
   <Route path='/' component={App}>
@@ -24,6 +25,7 @@ const routes = (
     <Route path='async-validation' component={AsyncValidationForm} />
     <Route path='field-array' component={FieldArrayForm} />
     <Route path='selectors' component={Selectors} />
+    <Route path='actions' component={Actions} />
   </Route>
 )
 

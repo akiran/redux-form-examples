@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {List, ListItem} from 'material-ui/List';
 import {Link} from 'react-router'
 
-class App extends Component {
+export default class App extends Component {
   render() {
     return (
       <div className="container">
@@ -19,6 +19,7 @@ class App extends Component {
               <Link to='/async-validation'><ListItem primaryText="Async Validation" /></Link>
               <Link to='/field-array'><ListItem primaryText="Field Array" /></Link>
               <Link to='/selectors'><ListItem primaryText="Selectors" /></Link>
+              <Link to='/actions'><ListItem primaryText="Actions" /></Link>
             </List>
           </div>
           <div className='col-xs-9'>
@@ -29,5 +30,3 @@ class App extends Component {
     );
   }
 }
-
-export default App;

@@ -7,7 +7,7 @@ import {TextField} from 'redux-form-material-ui'
 })
 export default class CustomEventsForm extends React.Component {
   changeHandler = (e) => {
-    e.preventDefault()
+    // e.preventDefault()
     this.props.change('username', e.target.value)
     console.log(e.target.value)
   }
