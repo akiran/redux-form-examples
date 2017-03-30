@@ -7,10 +7,14 @@ import {TextField} from 'redux-form-material-ui'
 })
 export default class CustomEventsForm extends React.Component {
   changeHandler = (e) => {
-    console.log(e)
+    e.preventDefault()
+    this.props.change('username', e.target.value)
+    console.log(e.target.value)
   }
   blurHandler = (e) => {
-    console.log('blur', e)
+    e.preventDefault()
+    this.props.blur(e)
+    console.log('blur')
   }
   render() {
     return (
@@ -18,6 +22,7 @@ export default class CustomEventsForm extends React.Component {
         <h1>Custom Events</h1>
         <form>
           <Field
+            id='customEvents'
             name='username'
             placeholder='User name'
             component={TextField}
