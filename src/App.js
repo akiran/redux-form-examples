@@ -16,6 +16,7 @@ class App extends Component {
               <Link to='/field-sync'><ListItem primaryText="Field Sync" /></Link>
               <Link to='/reducer'><ListItem primaryText="Reducer" /></Link>
               <Link to='/validation'><ListItem primaryText="Validation" /></Link>
+              <Link to='/async-validation'><ListItem primaryText="Async Validation" /></Link>
             </List>
           </div>
           <div className='col-xs-9'>
