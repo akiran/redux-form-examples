@@ -13,6 +13,8 @@ class App extends Component {
               <Link to='/autocomplete'><ListItem primaryText="Autocomplete" /></Link>
               <Link to='/initialization'><ListItem primaryText="Initialization" /></Link>
               <Link to='/custom-events'><ListItem primaryText="Custom Events" /></Link>
+              <Link to='/field-sync'><ListItem primaryText="Field Sync" /></Link>
+              <Link to='/reducer'><ListItem primaryText="Reducer" /></Link>
             </List>
           </div>
           <div className='col-xs-9'>
