@@ -10,6 +10,7 @@ import ReducerForm from './components/forms/ReducerForm'
 import ValidationForm from './components/forms/ValidationForm'
 import AsyncValidationForm from './components/forms/AsyncValidationForm'
 import FieldArrayForm from './components/forms/FieldArrayForm'
+import Selectors from './components/forms/Selectors'
 
 const routes = (
   <Route path='/' component={App}>
@@ -22,6 +23,7 @@ const routes = (
     <Route path='validation' component={ValidationForm} />
     <Route path='async-validation' component={AsyncValidationForm} />
     <Route path='field-array' component={FieldArrayForm} />
+    <Route path='selectors' component={Selectors} />
   </Route>
 )
 
