@@ -15,6 +15,7 @@ class App extends Component {
               <Link to='/custom-events'><ListItem primaryText="Custom Events" /></Link>
               <Link to='/field-sync'><ListItem primaryText="Field Sync" /></Link>
               <Link to='/reducer'><ListItem primaryText="Reducer" /></Link>
+              <Link to='/validation'><ListItem primaryText="Validation" /></Link>
             </List>
           </div>
           <div className='col-xs-9'>

@@ -7,6 +7,7 @@ import InitializationFormContainer from './components/forms/Initialization/Initi
 import CustomEventsForm from './components/forms/CustomEventsForm'
 import FieldSync from './components/forms/FieldSync'
 import ReducerForm from './components/forms/ReducerForm'
+import ValidationForm from './components/forms/ValidationForm'
 
 const routes = (
   <Route path='/' component={App}>
@@ -16,6 +17,7 @@ const routes = (
     <Route path='custom-events' component={CustomEventsForm} />
     <Route path='field-sync' component={FieldSync} />
     <Route path='reducer' component={ReducerForm} />
+    <Route path='validation' component={ValidationForm} />
   </Route>
 )
 
