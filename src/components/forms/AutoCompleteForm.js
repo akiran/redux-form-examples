@@ -2,7 +2,7 @@ import React from 'react'
 import {reduxForm, Field} from 'redux-form'
 import {AutoComplete} from 'material-ui'
 import {connect} from 'react-redux'
-import AutoCompleteField from './AutoCompleteField'
+import AutoCompleteField from '../common/AutoCompleteField'
 
 const dataSourceConfig = {
   text: 'name', value: 'id'
@@ -15,13 +15,13 @@ const dataSource = [
   {id: 4, name: 'jane'}
 ]
 
-@connect((state) => {
-  return {
-    initialValues: {
-      user: 1
-    }
-  }
-})
+// @connect((state) => {
+//   return {
+//     initialValues: {
+//       user: 1
+//     }
+//   }
+// })
 @reduxForm({
   form: 'autocomplete'
 })
