@@ -21,7 +21,7 @@ export default class AsyncValidationForm extends React.Component {
   render() {
     return (
       <div>
-        <h1>Async validation form</h1>
+        <h3>Async validation form</h3>
         <form>
           <Field
             name='username'

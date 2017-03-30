@@ -19,7 +19,7 @@ export default class CustomEventsForm extends React.Component {
   render() {
     return (
       <div>
-        <h1>Custom Events</h1>
+        <h3>Custom Events</h3>
         <form>
           <Field
             id='customEvents'

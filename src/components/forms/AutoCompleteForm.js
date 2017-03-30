@@ -29,7 +29,7 @@ export default class AutoCompleteForm extends React.Component {
   render() {
     return (
       <div>
-        <h1>AutoComplete example</h1>
+        <h3>AutoComplete example</h3>
         <Field
           id='autocomplete'
           name='user'

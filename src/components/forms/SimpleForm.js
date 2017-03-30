@@ -9,7 +9,7 @@ export default class SimpleForm extends React.Component {
   render() {
     return (
       <div>
-        <h1>Simple form</h1>
+        <h3>Simple form</h3>
         <form>
           <Field
             name='username'

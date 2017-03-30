@@ -15,7 +15,7 @@ export default class FieldSync extends React.Component {
   render() {
     return (
       <div>
-        <h1>Reducer</h1>
+        <h3>Reducer</h3>
         <form>
           <Field
             name='number'

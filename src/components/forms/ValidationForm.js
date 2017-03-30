@@ -28,7 +28,7 @@ export default class ValidationForm extends React.Component {
     const {handleSubmit} = this.props
     return (
       <div>
-        <h1>Validation form</h1>
+        <h3>Validation form</h3>
         <form onSubmit={handleSubmit}>
           <div>
             <Field

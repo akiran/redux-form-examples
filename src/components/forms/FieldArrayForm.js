@@ -45,7 +45,7 @@ export default class FieldArraysForm extends React.Component {
   render() {
     return (
       <div>
-        <h1>Field Array</h1>
+        <h3>Field Array</h3>
         <form>
           <FieldArray
             name='users'
