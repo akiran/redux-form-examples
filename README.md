@@ -3,3 +3,8 @@ Topics
 * AutoComplete
 * Initializing
 * Async validation
+
+todo
+* field array
+* selector
+* action creators

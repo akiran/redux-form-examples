@@ -17,6 +17,7 @@ class App extends Component {
               <Link to='/reducer'><ListItem primaryText="Reducer" /></Link>
               <Link to='/validation'><ListItem primaryText="Validation" /></Link>
               <Link to='/async-validation'><ListItem primaryText="Async Validation" /></Link>
+              <Link to='/field-array'><ListItem primaryText="Field Array" /></Link>
             </List>
           </div>
           <div className='col-xs-9'>
