@@ -5,11 +5,13 @@ const enhancer = composeEnhancers();
 
 import { reducer as formReducer } from 'redux-form'
 import fieldReducer from './fieldReducer'
+import userReducer from './userReducer'
 
 const reducers = {
   form: formReducer.plugin({
     reducerFormExample: fieldReducer
-  })
+  }),
+  user: userReducer
 }
 const reducer = combineReducers(reducers)
 const store = createStore(reducer, enhancer)
