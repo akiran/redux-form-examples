@@ -9,6 +9,7 @@ export default class InitializationForm extends React.Component {
   render() {
     return (
       <form>
+        <h3>Initialization example</h3>
         <div>
            <Field
              name='firstName'
