@@ -20,6 +20,7 @@ export default class App extends Component {
               <Link to='/reducer'><ListItem primaryText="Reducer" /></Link>
               <Link to='/selectors'><ListItem primaryText="Selectors" /></Link>
               <Link to='/actions'><ListItem primaryText="Actions" /></Link>
+              <Link to='/format'><ListItem primaryText="Format" /></Link>
             </List>
           </div>
           <div className='col-xs-9'>
