@@ -4,18 +4,19 @@ import {TextField} from 'redux-form-material-ui'
 
 function addDollar(value) {
   if (!value || value.startsWith('$')) {
-    return value
+    return ''
   } else {
     return '$' + value
   }
 }
 
-function stripDollar(value) {
-  if (!value) {
-    return value
-  } else {
-    return value.replace('$', '')
-  }
+function parseNumber(value) {
+  const number = value.replace(/[^\d\.]/g, "") // remove non numeric characters
+                      .replace(/\./, "x") // 3 regex statments to keep only one dot
+                      .replace(/\./g, "")
+                      .replace(/x/, ".");
+  // restrict floating point number to 2 decimal places
+  return (/^\d+\.\d\d\d$/).test(number) ? parseFloat(number).toFixed(2) : number
 }
 
 @reduxForm({
@@ -32,7 +33,7 @@ export default class SimpleForm extends React.Component {
             placeholder='Amount'
             component={TextField}
             format={addDollar}
-            normalize={stripDollar}
+            normalize={parseNumber}
           />
         </form>
       </div>
